@@ -22,6 +22,7 @@ function App() {
         <Route path="recruitment" element={<Recruitment/>}/>
         <Route path="members" element={<Members/>}/>
         <Route path="donate" element={<Donate/>}/>
+        <Route path="Finger Lakes" element={<FingerLakes/>}/>
         {/*catch all path for other arguments*/}
         <Route path="*" element={<Home/>}/>
       </Routes>
