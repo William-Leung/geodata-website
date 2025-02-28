@@ -7,6 +7,9 @@ export default function Members(){
 
   return(
     <>
+    <head>
+        <title>Members</title>
+    </head>
     <h1>Members</h1>
     </>
   )
