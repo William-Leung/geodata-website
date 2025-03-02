@@ -31,7 +31,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-<<<<<<< HEAD
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="our-work" element={<Our_Work />}>
@@ -45,20 +44,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-=======
-        <Route path="/" element={<Home/>}/>
-        <Route path="our-work" element={<Our_Work/>}/>
-        <Route path="finger-lakes" element={<FingerLakes/>}/>
-        <Route path="teams" element={<Teams/>}/>
-        <Route path="recruitment" element={<Recruitment/>}/>
-        <Route path="members" element={<Members/>}/>
-        <Route path="donate" element={<Donate/>}/>
-        {/*catch all path for other arguments*/}
-        <Route path="*" element={<Home/>}/>
-      </Routes>
-    </BrowserRouter>    
-    </>
->>>>>>> b92dd203cd3cb4a428e079f77c492ff189c13976
   )
 }
 
