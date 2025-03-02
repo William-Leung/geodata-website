@@ -8,22 +8,7 @@ import Members from './pages/Members.jsx';
 import Donate from './pages/Donate.jsx'
 import FingerLakes from './pages/FingerLakes.jsx';
 import './App.css'
-
-function Layout() {
-  return (
-    <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="our-work">Our Work</Link>
-        <Link to="teams">Teams</Link>
-        <Link to="recruitment">Recruitment</Link>
-        <Link to="members">Members</Link>
-        <Link to="donate">Donate</Link>
-      </nav>
-      <Outlet />
-    </>
-  );
-}
+import Layout from './components/Layout';
 
 function App() {
   const [count, setCount] = useState(0)

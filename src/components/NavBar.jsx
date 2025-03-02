@@ -9,10 +9,19 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="about">About</Link>
+          <Link to="our-work">Our Work</Link>
         </li>
         <li>
-          <Link to="dashboard">Dashboard</Link>
+          <Link to="teams">Teams</Link>
+        </li>
+        <li>
+          <Link to="recruitment">Recruitment</Link>
+        </li>
+        <li>
+          <Link to="members">Members</Link>
+        </li>
+        <li>
+          <Link to="donate">Donate</Link>
         </li>
       </ul>
     </nav>
