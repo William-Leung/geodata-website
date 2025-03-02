@@ -13,10 +13,10 @@ export default function Recruitment(){
 Please note that the General Project Team Application must be completed in addition to the CU GeoData Application. </p>
       <p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-hJH-No53xT1Wx4IZA_eUKRsOpr_6ME9ks5nx4YTBbquT0A/closedform" target="_blank" rel="noopener noreferrer" style={{ color: "blue",textDecoration: "underline"}}>CU GeoData Application Form</a>
-      <p>
+      </p>
       <p>
         <a href="https://cornell.ca1.qualtrics.com/jfe/form/SV_cuXl2vYgb5sNPWS" target="_blank" rel="noopener noreferrer" style={{ color: "blue",textDecoration: "underline"}}>General Project Team Application </a>
-      <p>
+      </p>
     </>
   )
 }
