@@ -8,7 +8,6 @@ export default function Our_Work(){
 
   return(
     <>
-      <h1>Our Work</h1>
       <Outlet />
     </>
   )
