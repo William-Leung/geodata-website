@@ -6,6 +6,7 @@ import Teams from './pages/Teams.jsx';
 import Recruitment from './pages/Recruitment.jsx';
 import Members from './pages/Members.jsx';
 import Donate from './pages/Donate.jsx'
+import FingerLakes from './pages/FingerLakes.jsx';
 import './App.css'
 
 function App() {
@@ -15,14 +16,13 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        {/* <Route index element={<Home/>} /> */}
+        <Route path="/" element={<Home/>}/>
         <Route path="our-work" element={<Our_Work/>}/>
         <Route path="teams" element={<Teams/>}/>
         <Route path="recruitment" element={<Recruitment/>}/>
         <Route path="members" element={<Members/>}/>
         <Route path="donate" element={<Donate/>}/>
-        <Route path="Finger Lakes" element={<FingerLakes/>}/>
+        <Route path="finger-lakes" element={<FingerLakes/>}/>
         {/*catch all path for other arguments*/}
         <Route path="*" element={<Home/>}/>
       </Routes>

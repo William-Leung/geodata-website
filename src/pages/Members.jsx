@@ -7,10 +7,11 @@ export default function Members(){
 
   return(
     <>
-    <head>
-        <title>Members</title>
-    </head>
     <h1>Members</h1>
+    <p>Team Leads:</p>
+    <p>Team Lead, Reserve, + photos</p>
+    <p>SubTeam Leads:</p>
+    <p>pictures!!</p>
     </>
   )
 }
