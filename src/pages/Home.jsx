@@ -7,8 +7,16 @@ export default function Home(){
 
   return(
     <>
-    <div className="text-red-500 hover:text-blue-500 text-sm sm:text-3xl md:text-5xl lg:text-7xl">Hello World</div>
-    <h1>GeoData Homepage</h1>
+      <h1>GeoData Homepage</h1>
+      <p> We perform ground-breaking research on local environments and ecosystems </p>
+
+      <p> As the Department of Earth and Atmospheric Science’s only student project team, we have the unique ability to leverage EAS resources and support combined with private funding to perform student-led research in the College of Engineering’s Project Team Program.</p>
+
+
+      <p> Our Organization </p>
+      <p> Find out about our mission, impact, and leadership structure. </p>
+
+
     </>
   )
 }
