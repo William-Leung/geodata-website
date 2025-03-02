@@ -7,8 +7,8 @@ export default function Donate(){
 
   return(
     <>
-    <h1>Donate</h1>
-    <p>please give us money</p>
+      <h1>Donate</h1>
+      <p>please give us money</p>
     </>
   )
 }
