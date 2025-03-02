@@ -17,12 +17,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="our-work" element={<Our_Work/>}/>
+        <Route path="our-work" element={<Our_Work/>}>
+          <Route path="finger-lakes" element={<FingerLakes/>}/>
+        </Route>
         <Route path="teams" element={<Teams/>}/>
         <Route path="recruitment" element={<Recruitment/>}/>
         <Route path="members" element={<Members/>}/>
         <Route path="donate" element={<Donate/>}/>
-        <Route path="finger-lakes" element={<FingerLakes/>}/>
         {/*catch all path for other arguments*/}
         <Route path="*" element={<Home/>}/>
       </Routes>

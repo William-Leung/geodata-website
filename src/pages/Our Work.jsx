@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { Outlet } from 'react-router-dom'
 export default function Our_Work(){
 
   const[count, setCount] = useState(0)
@@ -6,6 +7,9 @@ export default function Our_Work(){
 
 
   return(
-    <h1>Our Work</h1>
+    <>
+      <h1>Our Work</h1>
+      <Outlet />
+    </>
   )
 }
