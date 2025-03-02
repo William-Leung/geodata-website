@@ -7,8 +7,7 @@ export default function Home(){
 
   return(
     <>
-    <div className="text-red-500 hover:text-blue-500 text-sm sm:text-3xl md:text-5xl lg:text-7xl">Hello World</div>
-    <h1>GeoData Homepage</h1>
+      <h1>GeoData Homepage</h1>
     </>
   )
 }
