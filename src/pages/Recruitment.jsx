@@ -3,7 +3,9 @@ export default function Recruitment(){
 
   const[count, setCount] = useState(0)
 
-
+  useEffect(() => {
+    document.title = `Recruitment`;
+  });
 
   return(
     <>

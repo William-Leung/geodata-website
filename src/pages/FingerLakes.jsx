@@ -3,7 +3,9 @@ export default function FingerLakes(){
 
   const[count, setCount] = useState(0)
 
-
+  useEffect(() => {
+    document.title = `Finger Lakes`;
+  });
 
   return(
     <>

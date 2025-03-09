@@ -3,7 +3,9 @@ export default function Members(){
 
   const[count, setCount] = useState(0)
 
-
+  useEffect(() => {
+    document.title = `Members`;
+  });
 
   return(
     <>

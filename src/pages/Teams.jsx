@@ -3,7 +3,9 @@ export default function Teams(){
 
   const[count, setCount] = useState(0)
 
-
+  useEffect(() => {
+    document.title = 'Teams';
+  });
 
   return(
     <>
