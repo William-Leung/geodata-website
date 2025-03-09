@@ -3,7 +3,9 @@ export default function Home(){
 
   const[count, setCount] = useState(0)
 
-
+  useEffect(() => {
+    document.title = `Home Page`;
+  });
 
   return(
     <>
