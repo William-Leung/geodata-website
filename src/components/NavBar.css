@@ -1,0 +1,18 @@
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background: #557174;
+    color: #F7F7E8;
+}
+
+li a:hover:not(.active) {
+    background-color: #9DAD7F;
+}
+
+.active {
+    background-color: #000000;
+}
