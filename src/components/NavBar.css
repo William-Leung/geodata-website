@@ -1,12 +1,23 @@
+.nav-links{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    background: #557174;
+}
+
+.logo{
+    padding-left: 10px;
+    padding-right: 25%;
+}
+
 li {
     float: left;
-    
 }
 
 li a {
-    display: block;
-    padding: 8px;
-    background: #557174;
+    display: inline-block;
+    padding-inline: 8px;
+    padding-block: 15px;
     color: #F7F7E8;
 }
 
@@ -17,6 +28,8 @@ li a:hover:not(.active) {
 .active {
     background-color: #000000;
 }
+
+
 
 /* Dropdown Styles */
 .dropdown-content {
