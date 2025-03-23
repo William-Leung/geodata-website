@@ -1,17 +1,17 @@
 import {useState, useEffect} from 'react'
-export default function Teams(){
+export default function Data(){
 
   const[count, setCount] = useState(0)
 
   useEffect(() => {
-    document.title = 'Teams';
+    document.title = 'Data';
   });
 
   return(
     <>
-    <title>Teams</title>
-    <h1>Teams</h1>
-    <p>we have these!</p>
+    <title>Data</title>
+    <h1>Data</h1>
+    <p>focus and ... </p>
     </>
   )
 }
