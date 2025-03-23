@@ -1,0 +1,44 @@
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin: 16px;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .member-card__photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .member-card__content {
+    padding: 16px;
+  }
+  
+  .member-card__name {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .member-card__role {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .member-card__bio {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  

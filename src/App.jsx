@@ -9,6 +9,7 @@ import Donate from './pages/Donate.jsx'
 import FingerLakes from './pages/FingerLakes.jsx';
 import './App.css'
 import Layout from './components/Layout';
+import Data from './pages/Data.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
           <Route path="recruitment" element={<Recruitment />} />
           <Route path="members" element={<Members />} />
           <Route path="donate" element={<Donate />} />
+          <Route path="data" element={<Data />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
