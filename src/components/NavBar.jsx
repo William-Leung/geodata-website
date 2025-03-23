@@ -12,8 +12,11 @@ const NavBar = () => {
         <li>
           <Link to="our-work">Our Work</Link>
         </li>
-        <li>
-          <Link to="teams">Teams</Link>
+        <li className="dropdown">
+          <Link to="#">Teams &#9662;</Link>
+          <ul className="dropdown-content">
+            <li><Link to="Data">Data</Link></li>
+          </ul>
         </li>
         <li>
           <Link to="recruitment">Recruitment</Link>
