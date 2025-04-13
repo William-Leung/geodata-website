@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import logophoto from '../assets/images/favgeo.png';
 
 const NavBar = () => {
   return (
         <nav className = "navbar">
         <ul className="nav-links">
           <logo className = "logo">
-            <h1>logo</h1>
+            <Link to="/"><img src={logophoto} alt={'geodata logo'} className="logo_photo"/></Link>
           </logo>
           <li>
             <Link to="/">Home</Link>

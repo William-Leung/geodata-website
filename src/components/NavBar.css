@@ -10,8 +10,13 @@
     padding-right: 25%;
 }
 
+.logo_photo{
+    max-width: 40px;
+    object-fit: fill;
+}
+
 li {
-    float: left;
+    float: center;
 }
 
 li a {
@@ -34,6 +39,7 @@ li a:hover:not(.active) {
 /* Dropdown Styles */
 .dropdown-content {
     display: none;
+    text-align: left;
     position: absolute;
     background-color: #557174;
     min-width: 160px;
@@ -44,7 +50,7 @@ li a:hover:not(.active) {
 .dropdown-content a {
     color: #F7F7E8;
     padding: 10px 16px;
-    display: block;
+    display: grid;
     text-decoration: none;
 }
 
@@ -54,5 +60,5 @@ li a:hover:not(.active) {
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: grid;
 }
