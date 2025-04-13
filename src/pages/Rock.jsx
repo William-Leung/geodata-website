@@ -1,16 +1,16 @@
 import {useState, useEffect} from 'react'
-export default function Tech(){
+export default function Rock(){
 
   const[count, setCount] = useState(0)
 
   useEffect(() => {
-    document.title = 'Tech';
+    document.title = 'Rock';
   });
 
   return(
     <>
-    <title>Tech</title>
-    <h1>Tech</h1>
+    <title>Rock</title>
+    <h1>Rock</h1>
     <p>focus and ... </p>
     </>
   )

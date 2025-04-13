@@ -10,6 +10,12 @@ import FingerLakes from './pages/FingerLakes.jsx';
 import './App.css'
 import Layout from './components/Layout';
 import Data from './pages/Data.jsx';
+import Water from './pages/Water.jsx';
+import Air from  './pages/Air.jsx';
+import Tech from './pages/Tech.jsx';
+import Rock from './pages/Rock.jsx';
+import SnipeChallenge from './pages/SnipeChallenge.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +33,11 @@ function App() {
           <Route path="members" element={<Members />} />
           <Route path="donate" element={<Donate />} />
           <Route path="data" element={<Data />} />
+          <Route path="water" element={<Water />} />
+          <Route path="air" element={<Air />} />
+          <Route path="tech" element={<Tech />} />
+          <Route path="rock" element={<Rock />} />
+          <Route path="snipechallenge" element={<snipechallenge />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>

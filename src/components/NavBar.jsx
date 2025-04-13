@@ -19,6 +19,11 @@ const NavBar = () => {
             <Link to="#">Teams &#9662;</Link>
             <ul className="dropdown-content">
             <li><Link to="Data">Data</Link></li>
+            <li><Link to="Air">Air</Link></li>
+            <li><Link to="Rock">Rock</Link></li>
+            <li><Link to="Water">Water</Link></li>
+            <li><Link to="Tech">Tech</Link></li>
+            <li><Link to="Snipe Challenge">SnipeChallenge</Link></li>
           </ul>
         </li>
           <li>
