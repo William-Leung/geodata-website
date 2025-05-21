@@ -7,9 +7,9 @@ const NavBar = () => {
   return (
         <nav className = "navbar">
         <ul className="nav-links">
-          <logo className = "logo">
+          <ul className = "logo">
             <Link to="/"><img src={logophoto} alt={'geodata logo'} className="logo_photo"/></Link>
-          </logo>
+          </ul>
           <li>
             <Link to="/">Home</Link>
           </li>
