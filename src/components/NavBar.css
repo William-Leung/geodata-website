@@ -1,13 +1,22 @@
-.nav-links{
+/*the actual nav part?*/
+.navbar{
     display: flex;
-    /*justify-content: center;*/
-    align-items: center;
     background: #557174;
+    color: #DAD3BE;
+    justify-content: space-between;
 }
 
+/*links css*/
+.nav-links{
+    display: flex;
+    float: center;
+    align-items: center;
+}
+
+/*corner logo css*/
 .logo{
-    padding-left: 10px;
-    padding-right: 25%;
+    padding-inline: 8px;
+    align-content: center;
 }
 
 .logo_photo{
@@ -15,18 +24,18 @@
     object-fit: fill;
 }
 
-li {
-    float: center;
+/*list item css*/
+.nav-links li{
+    display: inline;
 }
 
-li a {
+.nav-links li a {
     display: inline-block;
     padding-inline: 8px;
     padding-block: 15px;
-    color: #F7F7E8;
 }
 
-li a:hover:not(.active) {
+.nav-links li a:hover:not(.active) {
     background-color: #9DAD7F;
 }
 
@@ -34,7 +43,28 @@ li a:hover:not(.active) {
     background-color: #000000;
 }
 
+/*donate button css*/
+.donate{
+    display: flex;
+    float: right;
+    align-items: center;
+    padding-inline: 8px;
+}
 
+.donate li a{
+    border-radius: 10px;
+    border: 3px solid #DAD3BE;
+    padding-inline: 8px;
+    padding-block: 8px;
+}
+
+.donate li a:hover:not(.active) {
+    border-radius: 10px;
+    background-color: #DAD3BE;
+    color: #557174;
+    padding-inline: 8px;
+    padding-block: 8px;
+}
 
 /* Dropdown Styles */
 .dropdown-content {
@@ -47,9 +77,12 @@ li a:hover:not(.active) {
     z-index: 1;
 }
 
+.dropdown-content li{
+    display: grid;
+}
+
 .dropdown-content a {
-    color: #F7F7E8;
-    padding: 10px 16px;
+    padding: 5px 8px;
     display: grid;
     text-decoration: none;
 }

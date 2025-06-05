@@ -4,7 +4,7 @@ export default function SnipeChallenge(){
   const[count, setCount] = useState(0)
 
   useEffect(() => {
-    document.title = 'Snipe Challegne';
+    document.title = 'Snipe Challenge';
   });
 
   return(

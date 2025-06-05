@@ -14,7 +14,7 @@ import Water from './pages/Water.jsx';
 import Air from  './pages/Air.jsx';
 import Tech from './pages/Tech.jsx';
 import Rock from './pages/Rock.jsx';
-import SnipeChallenge from './pages/SnipeChallenge.jsx'
+import SnipeChallenge from './pages/SnipeChallenge.jsx';
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
           <Route path="air" element={<Air />} />
           <Route path="tech" element={<Tech />} />
           <Route path="rock" element={<Rock />} />
-          <Route path="snipechallenge" element={<snipechallenge />} />
+          <Route path="snipe-challenge" element={<SnipeChallenge/>} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
