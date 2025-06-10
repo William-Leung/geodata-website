@@ -9,6 +9,8 @@ export default function Members(){
   useEffect(() => {
     document.title = `Members`;
   });
+
+  
   const member = {
     name: 'William Leung',
     team: 'Data Team',
@@ -18,7 +20,7 @@ export default function Members(){
 
   return(
     <>
-      <h1>Members</h1>
+      <h1 className='titleHeader'>Members</h1>
       <p>Team Leads:</p>
       <p>Team Lead, Reserve, + photos</p>
       <p>SubTeam Leads:</p>

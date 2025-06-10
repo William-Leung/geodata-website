@@ -1,0 +1,30 @@
+/*base css for a base page*/
+.page{
+    min-height: 80vh;
+}
+
+.page p{
+    padding-inline: 12px;
+}
+/*for the big word!*/
+.titleHeader{
+    padding-block: 20px;
+    font-weight: bold;
+    color: #254336;
+    font-size: 28px;
+}
+
+/*links*/
+.page a{
+    text-decoration: underline;
+    color: #6B8A7A;
+    font-style: italic;
+}
+
+.page a:hover{
+    color: #A4CCD9;
+}
+
+.page a:visited{
+    color: #E83F25;
+}

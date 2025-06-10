@@ -3,19 +3,30 @@
     background-color: #557174;
     color: #DAD3BE;
     float: center;
-    padding-bottom: 5px;
+    padding-block: 8px;
+    text-align: center;
+    bottom: 0;
 }
 
 .footer-links{
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-inline: 8px;
-    padding-block: 8px;
+    padding-inline: 10px;
 }
 
 .footer li{
+    display: inline-block;
     padding-inline: 5px;
+    border-right: 1px solid #DAD3BE;
+}
+
+.footer li a{
+    display: inline-block;
+}
+
+.footer li:last-child{
+    border-right: none;
 }
 
 .insta{
