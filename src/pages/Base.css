@@ -1,6 +1,7 @@
 /*base css for a base page*/
 .page{
-    min-height: 80vh;
+    background-color: white;
+    margin-inline: auto;
 }
 
 .page p{

@@ -11,7 +11,7 @@ export default function SnipeChallenge(){
     <>
     <title>Snipe Challenge</title>
     <h1>Snipes</h1>
-    <p>focus and ... </p>
+    <p>coming soon i think</p>
     </>
   )
 }

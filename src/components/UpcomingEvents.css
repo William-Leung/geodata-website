@@ -1,0 +1,53 @@
+.upcomingRibbon{
+    max-width: 1260px;
+    border-radius: 10px;
+    background-color: #D9EAFD;
+    overflow: hidden;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@keyframes move-ribbon{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.uRibbon-content{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 2;
+    width: max-content;
+    padding-inline: 20px;
+    animation: move-ribbon 20s linear infinite;
+}
+
+.uRibbon-content span{
+    font-size: 30px;
+    /*font-weight: bold;*/
+    font-stretch: ultra-expanded;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.background-photo{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 90%;
+    background-position: top;
+    z-index: 1;
+    background-image: url('../assets/images/mountains.png');
+    background-repeat: repeat-x;
+    background-size: auto 100px;
+}

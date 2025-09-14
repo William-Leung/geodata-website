@@ -1,0 +1,16 @@
+.geoBanner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 450px;
+}
+
+.banner{
+    object-fit: fill;
+}
+
+.upcoming-events{
+    padding-block: 10px;
+    height: 400px;
+}
