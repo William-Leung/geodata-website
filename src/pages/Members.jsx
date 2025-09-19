@@ -15,7 +15,7 @@ export default function Members(){
     name: 'William Leung',
     team: 'Data Team',
     photo: williamPhoto,
-    bio: 'William is quite tired!'
+    bio: 'William likes baking!'
   };
 
   return(
