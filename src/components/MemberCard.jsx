@@ -10,16 +10,18 @@ const MemberCard = ({ name, role, photo, bio }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className = {`member-card__overlay ${isHovered ? 'is-active' : ' '}`}>
-        {bio && <p className = "member-card__bio">
-          {bio}
-        </p>} 
+      <div className = "member-card__photo-wrapper">
+        <img src={photo} alt = {`${name}'s profile`} className = "member-card__photo"></img>
+        <div className = {`member-card__overlay ${isHovered ? 'is-active' : ' '}`}>
+          {bio && <p className = "member-card__bio">
+            {/* {bio} */}
+          </p>} 
+        </div>
       </div>
 
-      <img src={photo} alt = {`${name}'s profile`} className = "member-card__photo"></img>
 
       <div className = "member-card__content">
-        <h3 className = "member-card__name">{name}</h3>
+        <p className = "member-card__name">{name}</p>
         <p className = "member-card__role">{role}</p>
       </div>
     </div>
