@@ -14,7 +14,7 @@ const MemberCard = ({ name, role, photo, bio }) => {
         <img src={photo} alt = {`${name}'s profile`} className = "member-card__photo"></img>
         <div className = {`member-card__overlay ${isHovered ? 'is-active' : ' '}`}>
           {bio && <p className = "member-card__bio">
-            {/* {bio} */}
+            {bio}
           </p>} 
         </div>
       </div>
