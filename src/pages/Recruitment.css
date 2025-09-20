@@ -1,10 +1,32 @@
-.teamPhoto{
-    padding-block: 20px 40px;
-    padding-inline: 40px;
-    justify-content: center;
-    object-fit: fill;
+.recruitment-info{
+    overflow: hidden;
 }
 
+.info-box{
+    margin-top: 50px;
+    margin-bottom: auto;
+    float: 0;
+    padding-block: 20px;
+    margin-inline: 20%;
+    background-color: rgb(255 255 255/75%);
+}
+
+
+
+.title-header{
+    font-weight: bold;
+    color: #254336;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.team-photo{
+    height: 160vh;
+    display: flex;
+    background-position: top;
+    background-image: url('../assets/images/teamphoto_resized.png');
+    background-repeat: no-repeat;
+}
 .gpta{
     color: #254336;
 }
