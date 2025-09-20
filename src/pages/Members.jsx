@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import MemberCard from '../components/MemberCard';
 import williamPhoto from '../assets/images/william.jpg'
 
@@ -8,6 +8,26 @@ import williamPhoto from '../assets/images/william.jpg'
 export default function Members() {
   useEffect(() => {
     document.title = `Members`;
+  }, []);
+
+  const [activeCardId, setActiveCardId] = useState(null);
+  const teamContainerRef = useRef(null);
+
+  const handleActivate = (memberId) => {
+    setActiveCardId(prevId => (prevId === memberId ? null : memberId));
+  };
+
+  // closes cards outside element
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (teamContainerRef.current && !teamContainerRef.current.contains(event.target)) {
+        setActiveCardId(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   const teamMembers = [
@@ -42,14 +62,24 @@ export default function Members() {
       <p>SubTeam Leads:</p>
       <p>pictures!!</p>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem' }}>
+      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem' }}
+        onClick={(e) => {
+          if (e.target === teamContainerRef.current) {
+            setActiveCardId(null);
+          }
+        }}
+      >
+        
         {teamMembers.map(member => (
           <MemberCard
             key={member.id}
+            id={member.id}
             name={member.name}
             role={member.role}
             photo={member.photo}
             bio={member.bio}
+            isActive={activeCardId === member.id} 
+            onActivate={handleActivate}
           />
         ))}
       </div>

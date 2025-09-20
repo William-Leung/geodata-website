@@ -13,9 +13,11 @@
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
-.member-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+@media (hover : hover) and (pointer : fine) {
+  .member-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .member-card__photo-wrapper { 

@@ -1,18 +1,29 @@
-import React from 'react';
+import { useState} from 'react';
 import './MemberCard.css';
 
-const MemberCard = ({ name, role, photo, bio }) => {
-  const [isHovered, setIsHovered] = React.useState(false);
+const MemberCard = ({ id, name, role, photo, bio, isActive, onActivate }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const isTouchDevice = typeof window !== 'undefined' && window.matchMedia("(pointer: coarse)").matches;
+
+  const eventHandlers = {};
+
+  if (isTouchDevice) {
+    eventHandlers.onTouchEnd = (e) => {
+      e.preventDefault();
+      onActivate(id);
+    };
+  } else {
+    eventHandlers.onMouseEnter = () => setIsHovered(true);
+    eventHandlers.onMouseLeave = () => setIsHovered(false);
+  }
+
+  const showOverlay = isActive || (!isTouchDevice && isHovered);
 
   return (
-    <div className = "member-card"
-      // change isHovered variable based on when we leave/enter the member card
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className = "member-card" {...eventHandlers}>
       <div className = "member-card__photo-wrapper">
-        <img src={photo} alt = {`${name}'s profile`} className = "member-card__photo"></img>
-        <div className = {`member-card__overlay ${isHovered ? 'is-active' : ' '}`}>
+        <img src={photo} alt = {`${name}'s profile`} className = "member-card__photo"/>
+        <div className = {`member-card__overlay ${showOverlay ? 'is-active' : ' '}`}>
           {bio && <p className = "member-card__bio">
             {bio}
           </p>} 
@@ -29,5 +40,3 @@ const MemberCard = ({ name, role, photo, bio }) => {
 };
 
 export default MemberCard;
-//  don't render the bio if it doesn't exist
-
