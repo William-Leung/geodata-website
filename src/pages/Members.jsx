@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import MemberCard from '../components/MemberCard';
-import williamPhoto from '../assets/images/william.jpg'
+import defaultPhoto from '../assets/images/default.jpg'
+import williamHeadshot from '../assets/images/william_leung_headshot.png'
+import orionHeadshot from '../assets/images/orion_hoch_headshot.jpeg'
 
-// Since I can't access local files like 'william.jpg', I'm using placeholder URLs.
-// In your project, you would replace these strings with your imported photos like 'williamPhoto'.
 
 export default function Members() {
   useEffect(() => {
@@ -35,21 +35,21 @@ export default function Members() {
       id: 1,
       name: 'William Leung',
       role: 'Data Team Lead',
-      photo: williamPhoto,
-      bio: 'William enjoys baking'
+      photo: williamHeadshot,
+      bio: 'I\'m William and I love to bake! So far, I\'ve made egg tarts, pineapple bread, tiramisu, and cheesecake but I\'m sure more will be added to the list soon :) Outside of baking, I like to run, daydream, and go to the Farmer\'s Market.'
     },
     {
       id: 2,
-      name: 'Kylie Miller',
-      role: 'Full Team Lead',
-      photo: williamPhoto,
-      bio: 'hi'
+      name: 'Orion Hoch',
+      role: 'Water Team Lead',
+      photo: orionHeadshot,
+      bio: 'Hey I\'m Orion! Outside of the team you can find me on WVBR talking sports and movies, biking around Ithaca, and playing in 9 Fantasy leagues.'
     },
     {
       id: 3,
       name: 'Ashley Zhao',
       role: 'Data Team Member',
-      photo: williamPhoto,
+      photo: defaultPhoto,
       bio: 'hi.'
     }
   ];
@@ -62,7 +62,7 @@ export default function Members() {
       <p>SubTeam Leads:</p>
       <p>pictures!!</p>
 
-      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem' }}
+      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem' }}
         onClick={(e) => {
           if (e.target === teamContainerRef.current) {
             setActiveCardId(null);
