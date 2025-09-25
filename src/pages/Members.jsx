@@ -50,7 +50,7 @@ export default function Members() {
       name: 'Ashley Zhao',
       role: 'Data Team Member',
       photo: defaultPhoto,
-      bio: 'hi.'
+      bio: 'I\'m Ashley!! Aside from GeoData, I\'m involved in Impact Dance at Cornell, and in my free time I enjoy knitting, crochet, and sewing clothes! I have two cats and a dog back home whom I miss dearly..'
     }
   ];
 
@@ -62,6 +62,7 @@ export default function Members() {
       <p>SubTeam Leads:</p>
       <p>pictures!!</p>
 
+      <h2> Data Team </h2>
       <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem' }}
         onClick={(e) => {
           if (e.target === teamContainerRef.current) {
@@ -69,8 +70,9 @@ export default function Members() {
           }
         }}
       >
-        
-        {teamMembers.map(member => (
+        {teamMembers
+          .filter(member => member.role.includes('Data Team'))
+          .map(member => (
           <MemberCard
             key={member.id}
             id={member.id}
@@ -78,11 +80,41 @@ export default function Members() {
             role={member.role}
             photo={member.photo}
             bio={member.bio}
+            // linkedin
+            // coffee chat form
             isActive={activeCardId === member.id} 
             onActivate={handleActivate}
           />
         ))}
       </div>
+
+      <h2> Water Team </h2>
+      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem' }}
+        onClick={(e) => {
+          if (e.target === teamContainerRef.current) {
+            setActiveCardId(null);
+          }
+        }}
+      >
+        {teamMembers
+          .filter(member => member.role.includes('Water Team'))
+          .map(member => (
+          <MemberCard
+            key={member.id}
+            id={member.id}
+            name={member.name}
+            role={member.role}
+            photo={member.photo}
+            bio={member.bio}
+            // linkedin
+            // coffee chat form
+            isActive={activeCardId === member.id} 
+            onActivate={handleActivate}
+          />
+        ))}
+      </div>
+
+      
     </div>
   );
 }
