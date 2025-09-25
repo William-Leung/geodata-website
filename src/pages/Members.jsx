@@ -1,8 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import MemberCard from '../components/MemberCard';
-import defaultPhoto from '../assets/images/default.jpg'
-import williamHeadshot from '../assets/images/william_leung_headshot.png'
-import orionHeadshot from '../assets/images/orion_hoch_headshot.jpeg'
+import teamMembers from '../components/Member Data'
 
 
 export default function Members() {
