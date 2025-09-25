@@ -28,30 +28,6 @@ export default function Members() {
     };
   }, []);
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'William Leung',
-      role: 'Data Team Lead',
-      photo: williamHeadshot,
-      bio: 'I\'m William and I love to bake! So far, I\'ve made egg tarts, pineapple bread, tiramisu, and cheesecake but I\'m sure more will be added to the list soon :) Outside of baking, I like to run, daydream, and go to the Farmer\'s Market.'
-    },
-    {
-      id: 2,
-      name: 'Orion Hoch',
-      role: 'Water Team Lead',
-      photo: orionHeadshot,
-      bio: 'Hey I\'m Orion! Outside of the team you can find me on WVBR talking sports and movies, biking around Ithaca, and playing in 9 Fantasy leagues.'
-    },
-    {
-      id: 3,
-      name: 'Ashley Zhao',
-      role: 'Data Team Member',
-      photo: defaultPhoto,
-      bio: 'I\'m Ashley!! Aside from GeoData, I\'m involved in Impact Dance at Cornell, and in my free time I enjoy knitting, crochet, and sewing clothes! I have two cats and a dog back home whom I miss dearly..'
-    }
-  ];
-
   return (
     <div>
       <h1 className='titleHeader'>Members</h1>
