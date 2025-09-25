@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import MemberCard from '../components/MemberCard';
 import teamMembers from '../components/Member Data'
+import './Members.css'
 
 
 export default function Members() {
@@ -29,66 +30,94 @@ export default function Members() {
   }, []);
 
   return (
-    <div>
+    <div onClick={(e) => {
+          if (e.target === teamContainerRef.current) {
+            setActiveCardId(null);
+          }
+        }}>
       <h1 className='titleHeader'>Members</h1>
-      <p>Team Leads:</p>
-      <p>Team Lead, Reserve, + photos</p>
-      <p>SubTeam Leads:</p>
-      <p>pictures!!</p>
+      <div className = "member-cards">
+        <h2> Data Team </h2>
+        <div className= 'teamContainerRef' >
+          {teamMembers
+            .filter(member => member.role.includes('Data Team'))
+            .map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              // coffee chat form
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
 
-      <h2> Data Team </h2>
-      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem' }}
-        onClick={(e) => {
-          if (e.target === teamContainerRef.current) {
-            setActiveCardId(null);
-          }
-        }}
-      >
-        {teamMembers
-          .filter(member => member.role.includes('Data Team'))
-          .map(member => (
-          <MemberCard
-            key={member.id}
-            id={member.id}
-            name={member.name}
-            role={member.role}
-            photo={member.photo}
-            bio={member.bio}
-            // linkedin
-            // coffee chat form
-            isActive={activeCardId === member.id} 
-            onActivate={handleActivate}
-          />
-        ))}
-      </div>
+        <h2> Water Team </h2>
+        <div className= 'teamContainerRef'>
+          {teamMembers
+            .filter(member => member.role.includes('Water Team'))
+            .map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              // coffee chat form
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
 
-      <h2> Water Team </h2>
-      <div ref={teamContainerRef} style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem' }}
-        onClick={(e) => {
-          if (e.target === teamContainerRef.current) {
-            setActiveCardId(null);
-          }
-        }}
-      >
-        {teamMembers
-          .filter(member => member.role.includes('Water Team'))
-          .map(member => (
-          <MemberCard
-            key={member.id}
-            id={member.id}
-            name={member.name}
-            role={member.role}
-            photo={member.photo}
-            bio={member.bio}
-            // linkedin
-            // coffee chat form
-            isActive={activeCardId === member.id} 
-            onActivate={handleActivate}
-          />
-        ))}
-      </div>
+        <h2> Air Team </h2>
+        <div className= 'teamContainerRef'>
+          {teamMembers
+            .filter(member => member.role.includes('Air Team'))
+            .map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              // coffee chat form
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
 
-      
+        <h2> Business Team </h2>
+        <div className= 'teamContainerRef'>
+          {teamMembers
+            .filter(member => member.role.includes('Business Team'))
+            .map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              // coffee chat form
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
+
+      </div>      
     </div>
   );
 }
