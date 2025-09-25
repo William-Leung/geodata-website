@@ -1,9 +1,11 @@
 /*the actual nav part?*/
 .navbar{
+    min-width: 530px;
     display: flex;
     background: #557174;
     color: #DAD3BE;
     justify-content: space-between;
+    height: auto;
 }
 
 /*links css*/
