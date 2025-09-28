@@ -29,6 +29,23 @@ export default function Members() {
     };
   }, []);
 
+  //filters for team keyword
+  function chooseTeam (teamMembers, keyword) {
+    return ((teamMembers.filter(member => member.role.includes(keyword))).sort(compareString))
+  }
+
+
+  //compare strings function. for displaying namecards
+  function compareString (a, b) {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  }
+
   return (
     <div onClick={(e) => {
           if (e.target === teamContainerRef.current) {
@@ -58,15 +75,7 @@ export default function Members() {
         </div>
         <h2 className = 'subheading'> Data Team </h2>
         <div className= 'teamContainerRef' >
-          {teamMembers.filter(member => member.role.includes('Data')).sort((a, b) => {
-              if (a.name < b.name) {
-                return -1;
-              }
-              if (a.name > b.name) {
-                return 1;
-              }
-              return 0;
-          }).map(member => (
+          {chooseTeam(teamMembers, 'Data').map(member => (
             <MemberCard
               key={member.id}
               id={member.id}
@@ -84,16 +93,7 @@ export default function Members() {
 
         <h2 className = 'subheading'> Rock Team </h2>
           <div className= 'teamContainerRef' >
-            {teamMembers
-              .filter(member => member.role.includes('Rock')).sort((a, b) => {
-              if (a.name < b.name) {
-                return -1;
-              }
-              if (a.name > b.name) {
-                return 1;
-              }
-              return 0;
-          }).map(member => (
+            {chooseTeam(teamMembers, 'Rock').map(member => (
               <MemberCard
                 key={member.id}
                 id={member.id}
@@ -110,9 +110,7 @@ export default function Members() {
         </div>
         <h2 className = 'subheading'> Water Team </h2>
         <div className= 'teamContainerRef'>
-          {teamMembers
-            .filter(member => member.role.includes('Water Team'))
-            .map(member => (
+          {chooseTeam(teamMembers, 'Water').map(member => (
             <MemberCard
               key={member.id}
               id={member.id}
@@ -149,9 +147,7 @@ export default function Members() {
         </div>
         <h2 className = 'subheading'> Tech Team </h2>
         <div className= 'teamContainerRef' >
-          {((teamMembers
-            .filter(member => member.role.includes('Tech Team')).filter(member => !member.role.includes('Lead'))).sort())
-            .map(member => (
+          {chooseTeam(teamMembers, 'Tech').map(member => (
             <MemberCard
               key={member.id}
               id={member.id}
@@ -168,9 +164,7 @@ export default function Members() {
         </div>
         <h2 className = 'subheading'> Business Team </h2>
         <div className= 'teamContainerRef'>
-          {teamMembers
-            .filter(member => member.role.includes('Business Team'))
-            .map(member => (
+          {chooseTeam(teamMembers, 'Business').map(member => (
             <MemberCard
               key={member.id}
               id={member.id}
