@@ -3,6 +3,16 @@ import williamHeadshot from '../assets/images/william_leung_headshot.png'
 import orionHeadshot from '../assets/images/orion_hoch_headshot.jpeg'
 import lorraineHeadshot from '../assets/images/lorraine_yang_headshot.JPG'
 import annikaHeadshot from '../assets/images/annika_malhotra_headshot.png'
+import reeceHeadshot from '../assets/images/reece_shiraishi_headshot.jpeg'
+import nawalHeadshot from '../assets/images/nawal_bhatti_headshot.jpg'
+import michelleHeadshot from '../assets/images/michelle_zhao_headshot.jpeg'
+import raashidHeadshot from '../assets/images/raashid_husain_headshot.jpeg'
+import rithyaHeadshot from '../assets/images/rithya_sriram_headshot.png'
+import nickHeadshot from '../assets/images/nick_spoto_headshot.jpg'
+import nehaHeadshot from '../assets/images/neha_sudarshan_headshot.JPG'
+import alecHeadshot from '../assets/images/alec_daveynis_headshot.png'
+import ayaHeadshot from '../assets/images/aya_saute_headshot.JPG'
+
 
 const teamMembers = [{
         id: 1,
@@ -46,7 +56,7 @@ const teamMembers = [{
         role: 'Business Team Member',
         netid: 'am3359',
         photo: annikaHeadshot,
-        bio: 'Annika is from New Jersey! She is a sophomore in the Engineering School with an intended major in Computer Science and ORIE with a minor in AI. She is treasurer of the Phi Sigma Pi Honors Fraternity on campus and part of the Alpha Chi Omega sorority. She is passionate about the crossover between business and technology. She likes to workout and hang out in nature!.',
+        bio: 'Annika is from New Jersey! She is a sophomore in the Engineering School with an intended major in Computer Science and ORIE with a minor in AI. She is treasurer of the Phi Sigma Pi Honors Fraternity on campus and part of the Alpha Chi Omega sorority. She is passionate about the crossover between business and technology. She likes to workout and hang out in nature!',
         coffee: true
     },
     {
@@ -59,12 +69,102 @@ const teamMembers = [{
         coffee: true
     },
     {
-        id: 6,
-        name: 'Lorraine Yang',
-        role: 'Business Team Member',
-        netid: 'dy343',
+        id: 7,
+        name: 'Raashid Husain',
+        role: 'Rock Team Member',
+        netid: 'rah383',
+        photo: raashidHeadshot,
+        bio: 'Raashid is a fourth-year student studying Environmental Engineering and starting his M.Eng in Systems Engineering. He enjoys kayaking, hiking, and exploring Ithaca!',
+        coffee: false
+    },
+    {
+        id: 8,
+        name: 'Nick Spoto',
+        role: 'Rock Team Member',
+        netid: 'njs232',
+        photo: nickHeadshot,
+        bio: 'Nick Spoto is a student studying computer science in Cornell University\'s College of Engineering, with a minor in AI. He is interested in web development and software engineering, and he wants to work in defense-based software and frontend/backend development.',
+        coffee: true
+    },
+    {
+        id: 9,
+        name: 'Duke Gandin',
+        role: 'Water Team Member',
+        netid: 'dag374',
         photo: defaultPhoto,
-        bio: 'Lorraine is a junior majoring statistics with minors in music and environment & sustainability. Outside of GeoData, she\'s involved in Cornell Dragon Boat and Improvisation Ensemble. When she\'s not thinking about schoolwork, she will be in Lincoln Hall trying out different improv techniques on the piano, or exploring the Cornell Lab of Ornithology and the Botanic Garden.',
+        bio: 'Duke is currently on the water subteam working to analyze sap flux in trees. Aside from GeoData, he is involved in Cornell running club and likes to explore the Ithaca and Cornell area.',
+        coffee: true
+    },
+    {
+        id: 10,
+        name: 'Michelle Zhao',
+        role: 'Business Team Member',
+        netid: 'mz625',
+        photo: michelleHeadshot,
+        bio: 'Michelle is studying Computer Science and ORIE in the College of Engineering. Outside of GeoData she\'s involved with the Society of Women Engineers and enjoys reading, watching movies, exploring national parks, and keeping up with F1.',
+        coffee: true
+    },
+    {
+        id: 11,
+        name: 'Shubha Gautam',
+        role: '',
+        netid: 'sg2563',
+        photo: defaultPhoto,
+        bio: 'Shubha is new to GeoData, but aside from the team, she\'s involved with Cornell YDSA and The Daily Sun. In my free time, you can find her reading anti-westerns or exploring Ithaca! She\'s from Missouri and often miss living 10 minutes from the Missouri River.',
+        coffee: false
+    },
+    {
+        id: 12,
+        name: 'Nawal Bhatti',
+        role: '',
+        netid: 'nb625',
+        photo: nawalHeadshot,
+        bio: 'Nawal Bhatti is a senior majoring in Information Science with a minor in Business. As part of her CU GeoData subteam, she contributes to the development of drones for data collection and the creation of continuous temperature probes and sensors for Cayuga Lake. ',
+        coffee: true
+    },
+    {
+        id: 13,
+        name: 'Reece Shiraishi',
+        role: '',
+        netid: 'rcs374',
+        photo: reeceHeadshot,
+        bio: 'A junior in ECE, Reece is involved in Cornell IEEE and the pickleball club. He enjoys weightlifting, coding, and eating the cinnamon twists in the dining halls.',
+        coffee: false
+    },
+    {
+        id: 14,
+        name: 'Rithya Sriram',
+        role: 'Data Team Lead',
+        netid: 'ra596',
+        photo: rithyaHeadshot,
+        bio: 'Rithya enjoys space, audiobooks (about five months of listening time), and ice skating! Her toxic trait is thinking everywhere is in walking distance.',
+        coffee: true
+    },
+    {
+        id: 15,
+        name: 'Alec Daveynis',
+        role: 'Data Team Member',
+        netid: '',
+        photo: alecHeadshot,
+        bio: '',
+        coffee: true
+    },
+    {
+        id: 16,
+        name: 'Aya Saute',
+        role: 'Rock Team Lead',
+        netid: '',
+        photo: ayaHeadshot,
+        bio: '',
+        coffee: true
+    },
+    {
+        id: 17,
+        name: 'Neha Sudarshan',
+        role: 'Tech Team Member',
+        netid: '',
+        photo: nehaHeadshot,
+        bio: '',
         coffee: true
     },
 ];

@@ -2,17 +2,12 @@
     margin-top: 50px;
     margin-bottom: 50px;
     float: 0;
-    padding-block: 3%;
+    padding-bottom: 20px;
     margin-inline: 20%;
     background-color: rgb(255 255 255/75%);
 }
 
-.title-header{
-    font-weight: bold;
-    color: #254336;
-    font-size: 28px;
-    padding-bottom: 8px;
-}
+
 
 .team-photo{
     min-height: 914px;

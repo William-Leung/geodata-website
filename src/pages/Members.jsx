@@ -37,10 +37,10 @@ export default function Members() {
         }}>
       <h1 className='titleHeader'>Members</h1>
       <div className = "member-cards">
-        <h2> Data Team </h2>
+      <h2 className = 'subheading'> Subteam Leads </h2>
         <div className= 'teamContainerRef' >
           {teamMembers
-            .filter(member => member.role.includes('Data Team'))
+            .filter(member => member.role.includes('Lead'))
             .map(member => (
             <MemberCard
               key={member.id}
@@ -50,14 +50,65 @@ export default function Members() {
               photo={member.photo}
               bio={member.bio}
               // linkedin
-              // coffee chat form
+              coffee={member.coffee}
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
+        <h2 className = 'subheading'> Data Team </h2>
+        <div className= 'teamContainerRef' >
+          {teamMembers.filter(member => member.role.includes('Data')).sort((a, b) => {
+              if (a.name < b.name) {
+                return -1;
+              }
+              if (a.name > b.name) {
+                return 1;
+              }
+              return 0;
+          }).map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              coffee={member.coffee}
               isActive={activeCardId === member.id} 
               onActivate={handleActivate}
             />
           ))}
         </div>
 
-        <h2> Water Team </h2>
+        <h2 className = 'subheading'> Rock Team </h2>
+          <div className= 'teamContainerRef' >
+            {teamMembers
+              .filter(member => member.role.includes('Rock')).sort((a, b) => {
+              if (a.name < b.name) {
+                return -1;
+              }
+              if (a.name > b.name) {
+                return 1;
+              }
+              return 0;
+          }).map(member => (
+              <MemberCard
+                key={member.id}
+                id={member.id}
+                name={member.name}
+                role={member.role}
+                photo={member.photo}
+                bio={member.bio}
+                // linkedin
+                coffee={member.coffee}
+                isActive={activeCardId === member.id} 
+                onActivate={handleActivate}
+              />
+            ))}
+        </div>
+        <h2 className = 'subheading'> Water Team </h2>
         <div className= 'teamContainerRef'>
           {teamMembers
             .filter(member => member.role.includes('Water Team'))
@@ -70,14 +121,14 @@ export default function Members() {
               photo={member.photo}
               bio={member.bio}
               // linkedin
-              // coffee chat form
+              coffee={member.coffee}
               isActive={activeCardId === member.id} 
               onActivate={handleActivate}
             />
           ))}
         </div>
 
-        <h2> Air Team </h2>
+        <h2 className = 'subheading'> Air Team </h2>
         <div className= 'teamContainerRef'>
           {teamMembers
             .filter(member => member.role.includes('Air Team'))
@@ -90,14 +141,32 @@ export default function Members() {
               photo={member.photo}
               bio={member.bio}
               // linkedin
-              // coffee chat form
+              coffee={member.coffee}
               isActive={activeCardId === member.id} 
               onActivate={handleActivate}
             />
           ))}
         </div>
-
-        <h2> Business Team </h2>
+        <h2 className = 'subheading'> Tech Team </h2>
+        <div className= 'teamContainerRef' >
+          {((teamMembers
+            .filter(member => member.role.includes('Tech Team')).filter(member => !member.role.includes('Lead'))).sort())
+            .map(member => (
+            <MemberCard
+              key={member.id}
+              id={member.id}
+              name={member.name}
+              role={member.role}
+              photo={member.photo}
+              bio={member.bio}
+              // linkedin
+              coffee={member.coffee}
+              isActive={activeCardId === member.id} 
+              onActivate={handleActivate}
+            />
+          ))}
+        </div>
+        <h2 className = 'subheading'> Business Team </h2>
         <div className= 'teamContainerRef'>
           {teamMembers
             .filter(member => member.role.includes('Business Team'))
@@ -110,7 +179,7 @@ export default function Members() {
               photo={member.photo}
               bio={member.bio}
               // linkedin
-              // coffee chat form
+              coffee={member.coffee}
               isActive={activeCardId === member.id} 
               onActivate={handleActivate}
             />

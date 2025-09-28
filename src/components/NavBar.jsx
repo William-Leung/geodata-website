@@ -23,8 +23,8 @@ const NavBar = () => {
               <li><Link to="snipe-challenge">Snipe Challenge</Link></li>
             </ul>
           </li>
-          <li><Link to="recruitment"><span className="navText">Recruitment</span></Link></li>
           <li><Link to="members"><span className="navText">Members</span></Link></li>
+          <li><Link to="recruitment"><span className="navText">Recruitment</span></Link></li>
           </ul>
           <ul className = "donate">
             <li><Link to="donate">Donate</Link></li>
