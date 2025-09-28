@@ -26,14 +26,17 @@ const MemberCard = ({ id, name, role, photo, bio, isActive, onActivate }) => {
         <div className = {`member-card__overlay ${showOverlay ? 'is-active' : ' '}`}>
           {bio && <p className = "member-card__bio">
             {bio}
-          </p>} 
+          </p>
+          }
         </div>
       </div>
 
-
       <div className = "member-card__content">
         <p className = "member-card__name">{name}</p>
-        <p className = "member-card__role">{role}</p>
+        <p className = "member-card__role">{role}</p> 
+       <p className = "member-card__contact"> <a href={`mailto:ra596@cornell.edu?subject=${encodeURIComponent('Coffee Chat Request')}&body=${encodeURIComponent(`Hello ${name || ''},\n\nI am interested in learning about geodata and your experience. Would you be free sometime for a quick coffee chat?\n\nBest,\n[enter your name]`)}`}
+              className="member-card_coffee-chat">
+               Coffee Chat </a> </p>
       </div>
     </div>
   );

@@ -88,3 +88,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
+.member-card_coffee-chat{
+    font-family:'Inter', sans-serif;
+    font-Style: italic;
+}
