@@ -66,6 +66,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 
@@ -83,6 +84,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 
@@ -101,6 +103,7 @@ export default function Members() {
                 role={member.role}
                 photo={member.photo}
                 bio={member.bio}
+                netid={member.netid}
                 // linkedin
                 coffee={member.coffee}
                 isActive={activeCardId === member.id} 
@@ -118,6 +121,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 
@@ -138,6 +142,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 
@@ -155,6 +160,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 
@@ -172,6 +178,7 @@ export default function Members() {
               role={member.role}
               photo={member.photo}
               bio={member.bio}
+              netid={member.netid}
               // linkedin
               coffee={member.coffee}
               isActive={activeCardId === member.id} 

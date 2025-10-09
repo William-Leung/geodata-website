@@ -92,4 +92,9 @@
 .member-card_coffee-chat{
     font-family:'Inter', sans-serif;
     font-Style: italic;
+    cursor: pointer;
+    padding: 3px;
+    border: 2px ridge rgba(21, 45, 37, 0.85);
+    background-color: rgba(0, 0, 0, 0.10);
+
 }
