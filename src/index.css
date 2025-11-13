@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* base css for a base page */
+.page {
+}
+
+/* paragraphs on any page */
+.page p {
+  padding-inline: 12px;
+}
+
+/* for the big word! */
+.titleHeader {
+  font-family: "Lora", serif;
+  padding-block: 20px;
+  font-weight: bold;
+  color: #254336;
+  font-size: 40px;
+}
+
+/* links */
+.page a {
+  text-decoration: underline;
+  color: #6B8A7A;
+  font-style: italic;
+}
+
+.page a:hover {
+  color: #A4CCD9;
+}
+
+.page a:visited {
+  color: #E83F25;
+}
