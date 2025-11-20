@@ -1,4 +1,8 @@
 import {useState, useEffect} from 'react'
+import ProjectCard from '../components/ProjectCard';
+import projects from '../components/Project Data'
+
+
 export default function Water(){
 
   const[count, setCount] = useState(0)
@@ -6,12 +10,22 @@ export default function Water(){
   useEffect(() => {
     document.title = 'Water';
   });
-
-  return(
-    <>
-    <title>Water</title>
-    <h1>Water</h1>
-    <p>focus and ... </p>
-    </>
-  )
+    return (
+        <div>
+            <h1 className='titleHeader'>Water Team Projects</h1>
+            <div className="project-card">
+                <div className='project-card-container'>
+                    {projects
+                        .filter(project => project.team === 'Water')
+                        .map(project => (
+                            <ProjectCard
+                                key={project.id}
+                                projectName={project.projectName}
+                                description={project.description}
+                            />
+                        ))}
+                </div>
+            </div>
+        </div>
+    );
 }

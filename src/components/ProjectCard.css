@@ -1,0 +1,11 @@
+.project-card {
+    width: 100%;
+    max-width: 880px;
+    margin: auto;
+    background-color: green;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom:16px;
+}
+
